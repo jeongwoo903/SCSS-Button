@@ -11,13 +11,17 @@ button {
   outline: 0;
   border: 0;
   border-radius: 20px;
+  color: white;
+  text-shadow: 0px 1px #5964f9;
   font-size: 1em;
   padding: 10px 30px;
   box-shadow: 0px 3px 0 #5964f9;
 }
+
 button:hover {
   background-color: #727bfa;
 }
+
 button:active {
   box-shadow: none;
   transform: translateY(3px);
