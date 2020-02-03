@@ -1,0 +1,32 @@
+$buttonColor: #727bfa;
+$buttonLight: lighten($buttonColor, 5%);
+$buttonDark: darken($buttonColor, 5%);
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: $buttonLight;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 0px 1px $buttonDark;
+  font-size: 1em;
+  padding: 10px 30px;
+  box-shadow: 0px 3px 0 $buttonDark;
+
+  &:hover {
+    background-color: $buttonColor;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+}
